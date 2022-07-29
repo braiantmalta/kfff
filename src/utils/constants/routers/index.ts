@@ -1,0 +1,17 @@
+export enum AppRouters {
+  home = '/',
+  login = '/entrar',
+  register = '/registrar',
+  resetPassword = '/reset-senha',
+  forgotPassword = '/esqueceu-a-senha',
+  dashboard = '/dashboard',
+  profile = '/dashboard/perfil',
+  customers = '/dashboard/clientes',
+  addCustomer = '/dashboard/clientes/novo',
+  updateCustomer = '/dashboard/clientes/editar',
+  resetEmail = '/dashboard/reset-email',
+  permissions = '/dashboard/permissoes',
+  addPermissions = '/dashboard/permissoes/novo',
+  updatePermission = '/dashboard/permissoes/editar',
+  successPage = '/sucesso',
+}
