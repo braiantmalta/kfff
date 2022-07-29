@@ -3,10 +3,11 @@ import Script from 'next/script';
 import type { AppProps } from 'next/app';
 import { ApolloProvider } from '@apollo/client';
 import { CssBaseline, NoSsr } from '@mui/material';
+import { ThemeProvider } from '@mui/system';
 import { useApollo } from '../graphql/client';
 import { ContextApiProviders } from '../context/globalContext';
-import { ThemeProvider } from '@components/common/themeProvider';
 import '../styles/globals.css';
+import { theme } from '@styles/theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const client = useApollo(pageProps.initialApoloState);
@@ -63,7 +64,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               </>
             )}
           </Head>
-          <ThemeProvider>
+          <ThemeProvider theme={theme}>
             <CssBaseline />
             <Component {...pageProps} />
           </ThemeProvider>

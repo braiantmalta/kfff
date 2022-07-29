@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-import { BlackButton } from '@components/common/buttons';
+// import { BlackButton } from '@components/common/buttons';
 import { Container } from '@components/common/container';
 import { Logo } from '@components/common/logo';
 import {
@@ -40,7 +40,7 @@ export const Header = ({ items }: HeaderProps) => {
                     </BlackLink>
                   </Item>
                 ))}
-                <BlackButton /* onClick={() => {}} */>REGISTRE-SE</BlackButton>
+                {/* <BlackButton >REGISTRE-SE</BlackButton> */}
               </ItemList>
             </ItemBox>
           </NavbarContent>

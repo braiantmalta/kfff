@@ -1,6 +1,6 @@
-import { DashboardTemplate } from '@template/dashboard';
+import { LandingPageTemplate } from '@template/page';
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => <DashboardTemplate />;
+const Home: NextPage = () => <LandingPageTemplate />;
 
 export default Home;

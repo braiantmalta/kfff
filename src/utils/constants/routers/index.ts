@@ -14,4 +14,7 @@ export enum AppRouters {
   addPermissions = '/dashboard/permissoes/novo',
   updatePermission = '/dashboard/permissoes/editar',
   successPage = '/sucesso',
+  contact = '/contato',
+  termsAndCondition = '/termos-e-condicoes',
+  aboutUs = '/sobre-nos',
 }

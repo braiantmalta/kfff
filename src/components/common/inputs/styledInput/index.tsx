@@ -1,7 +1,8 @@
+import { ChangeEventHandler, ReactNode, useState } from 'react';
 import { Help } from '@mui/icons-material';
 import { TextField } from '@mui/material';
 import { SxProps } from '@mui/system';
-import { ChangeEventHandler, useState } from 'react';
+
 import { BootstrapTooltip } from '@components/common/bootstrapTooltip';
 import { ShowPassword } from '../showPassword';
 
@@ -50,6 +51,8 @@ type StyledInputProps = {
   rows?: number;
   maxRows?: number;
   inputProps?: any;
+  select?: boolean;
+  children?: ReactNode;
 };
 
 export const StyledInput = ({
@@ -73,6 +76,8 @@ export const StyledInput = ({
   rows,
   maxRows,
   inputProps,
+  select,
+  children,
 }: StyledInputProps) => {
   const [typeState, setTypeState] = useState<string>(type);
 
@@ -119,6 +124,9 @@ export const StyledInput = ({
         endAdornment: generateEndAdornment(),
       }}
       inputProps={inputProps}
-    />
+      select={select}
+    >
+      {children}
+    </TextField>
   );
 };

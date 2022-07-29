@@ -33,12 +33,13 @@ export const ItemBox = styled('div')({
 export const ItemList = styled('div')({
   display: 'flex',
   alignItems: 'center',
+  gap: '2.5rem',
 });
 
 export const Item = styled('span')({
   color: 'white',
   cursor: 'pointer',
   textAlign: 'center',
-  margin: '0rem 2.25rem',
+  // margin: '0rem 2.25rem',
   transition: '0.2s all',
 });
